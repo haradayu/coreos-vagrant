@@ -28,8 +28,8 @@ $instance_name_prefix = "core"
 $enable_serial_logging = false
 $share_home = false
 $vm_gui = false
-$vm_memory = 1024
-$vm_cpus = 1
+$vm_memory = 3000
+$vm_cpus = 2
 $vb_cpuexecutioncap = 100
 $shared_folders = {}
 $forwarded_ports = {}
@@ -169,4 +169,5 @@ Vagrant.configure("2") do |config|
       end
     end
   end
+  config.vm.provision :shell, path:"./script.sh"
 end
