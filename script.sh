@@ -4,5 +4,4 @@ chmod +x /opt/bin/docker-compose
 export PATH="$PATH:/opt/bin"
 git clone https://github.com/haradayu/docker-compose-cloud9-jupyterlab.git
 cd docker-compose-cloud9-jupyterlab
-docker-compose up &
-ifconfig
+docker-compose up 
